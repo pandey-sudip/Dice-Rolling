@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Rolling</title>
+</head>
+<body>
+    <div class="container">
+        <button onclick="Roll()">Roll Dice</button>
+        <div id="dice-image" class="dice-image">
+
+        </div>
+    </div>
+</body>
+<script>
+    function Roll(){
+        let random=Math.floor(Math.random()*6)+1;
+        document.getElementById('dice-image').innerHTML="<img src='images/"+random+".png' />";
+    }
+</script>
+</html>
